@@ -1,0 +1,116 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media
+/static
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# React / Node.js
+# Dependencies
+payrollhq-frontend/node_modules/
+payrollhq-frontend/.pnp
+payrollhq-frontend/.pnp.js
+
+# Testing
+payrollhq-frontend/coverage/
+
+# Production build
+payrollhq-frontend/build/
+
+# Environment variables
+payrollhq-frontend/.env.local
+payrollhq-frontend/.env.development.local
+payrollhq-frontend/.env.test.local
+payrollhq-frontend/.env.production.local
+
+# npm/yarn logs
+payrollhq-frontend/npm-debug.log*
+payrollhq-frontend/yarn-debug.log*
+payrollhq-frontend/yarn-error.log*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Miscellaneous
+*.tgz
+*.tar.gz
+
+# Local environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Vercel
+.vercel
+
+# Railway
+.railway/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
