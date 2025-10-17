@@ -11,7 +11,7 @@
 
 1. **Connect Repository to Railway**
    - Go to Railway dashboard
-   - Click "New Project"
+   - Click "New Project"  
    - Select "Deploy from GitHub repo"
    - Choose `capollo254/payrolhq` repository
 
@@ -29,7 +29,8 @@
    - No manual database configuration needed
 
 4. **Deploy**
-   - Railway will automatically detect Python project
+   - Railway will automatically detect Django project (manage.py in root)
+   - Uses Python 3.11 (specified in runtime.txt)
    - Uses `Procfile` for deployment commands
    - Runs migrations and collects static files automatically
 
@@ -93,12 +94,12 @@ The Django backend can serve the React frontend in production:
 
 1. **Create Superuser**
    ```bash
-   railway run python payrollhq/manage.py createsuperuser
+   railway run python manage.py createsuperuser
    ```
 
 2. **Load Sample Data** (Optional)
    ```bash
-   railway run python payrollhq/manage.py shell -c "
+   railway run python manage.py shell -c "
    from master_data.sample_data import create_sample_compliance_data
    create_sample_compliance_data()
    "
@@ -135,8 +136,8 @@ railway logs
 
 ### Running Commands
 ```bash
-railway run python payrollhq/manage.py shell
-railway run python payrollhq/manage.py migrate
+railway run python manage.py shell
+railway run python manage.py migrate
 ```
 
 ## 🔐 Security Checklist
